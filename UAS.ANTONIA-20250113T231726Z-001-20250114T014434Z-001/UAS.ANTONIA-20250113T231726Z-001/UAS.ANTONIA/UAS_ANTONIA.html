@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toko Fashion - Produk</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Produk</a></li>
+        <li><a href="#">Keranjang (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Daftar Produk</h1>
+    <section class="produk-list">
+      <div class="produk-item">
+        <h2>SCARLET</h2>
+        <img src="..//a1.png">
+        <p>Deskripsi produk 1</p>
+        <p>Harga: Rp300.000</p>
+        <button class="add-to-cart" data-product="Produk 1" data-price="100000">Tambah ke Keranjang</button>
+      </div>
+      <div class="produk-item">
+        <h2>HANASUI</h2>
+        <img src="..//HANASUI.jpg">
+        <p>Deskripsi produk 2</p>
+        <p>Harga: Rp150.000</p>
+        <button class="add-to-cart" data-product="Produk 2" data-price="150000">Tambah ke Keranjang</button>
+      </div>
+      <div class="produk-item">
+        <h2>SKINTIFIC</h2>
+        <img src="..//skintific.jpg">
+        <p>Deskripsi produk 3</p>
+        <p>Harga: Rp250.000</p>
+        <button class="add-to-cart" data-product="Produk 3" data-price="200000">Tambah ke Keranjang</button>
+      </div>
+      <div class="produk-item">
+        <h2>GLAD2GLOW</h2>
+        <img src="..//GLAD2GLOW.jpg">
+        <p>Deskripsi produk 3</p>
+        <p>Harga: Rp200.000</p>
+        <button class="add-to-cart" data-product="Produk 3" data-price="200000">Tambah ke Keranjang</button>
+      </div>
+      <div class="produk-item">
+        <h2>WARDAH</h2>
+        <img src="..//WARDAH.jpg">
+        <p>Deskripsi produk 3</p>
+        <p>Harga: Rp300.000</p>
+        <button class="add-to-cart" data-product="Produk 3" data-price="200000">Tambah ke Keranjang</button>
+      </div>
+     <div class="produk-item">
+        <h2>PONDS</h2>
+        <img src="..//PONDS.png">
+        <p>Deskripsi produk 3</p>
+        <p>Harga: Rp300.000</p>
+        <button class="add-to-cart" data-product="Produk 3" data-price="200000">Tambah ke Keranjang</button>
+      </div>
+      <div class="produk-item">
+        <h2>THE ORIGINAL</h2>
+        <img src="..//THE ORIGINAL.jpg">
+        <p>Deskripsi produk 3</p>
+        <p>Harga: Rp250.000</p>
+        <button class="add-to-cart" data-product="Produk 3" data-price="200000">Tambah ke Keranjang</button>
+      </div>
+      <div class="produk-item">
+        <h2>Y.O.U</h2>
+        <img src="..//Y.O.U.jpg">
+        <p>Deskripsi produk 3</p>
+        <p>Harga: Rp250.000</p>
+        <button class="add-to-cart" data-product="Produk 3" data-price="200000">Tambah ke Keranjang</button>
+      </div>
+      <div class="produk-item">
+        <h2>GARNIER</h2>
+        <img src="..//GARNIER.jpg">
+        <p>Deskripsi produk 3</p>
+        <p>Harga: Rp200.000</p>
+        <button class="add-to-cart" data-product="Produk 3" data-price="200000">Tambah ke Keranjang</button>
+      </div>
+      <div class="produk-item">
+        <h2>FAIR AND LOVELY</h2>
+        <img src="..//FAIRANDLOVELY.jpg">
+        <p>Deskripsi produk 3</p>
+        <p>Harga: Rp250.000</p>
+        <button class="add-to-cart" data-product="Produk 3" data-price="200000">Tambah ke Keranjang</button>
+      </div>
+    </section>
+  </main>
+ <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Main */
+  main {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .produk-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .produk-item {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .produk-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  /* Responsif untuk layar kecil */
+  @media screen and (max-width: 768px) {
+    .produk-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .produk-item {
+      width: 80%;
+    }
+  }
+</style>
+
+  <footer>
+    <p>&copy; 2025 Toko Fashion</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
